@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://media.cnn.com/api/v1/images/stellar/prod/150929101049-black-coffee-stock.jpg?q=x_3,y_1231,h_1684,w_2993,c_crop/h_720,w_1280);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Anton', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+    position:fixed;
+    align-items: right;
+    z-index: 1;
+}
+.logo{
+    width: 50px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+span{
+    color: brown;
+}
+.heading{
+    text-align: center;
+    color: #330707;
+    padding-top: 3.5rem;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+.menu li a{
+    text-decoration: none;
+    color: brown;
+    font-size: 27px;
+    margin-left: 25px;
+    transition: .4s ease;
+}
+.menu li a:hover{
+    color: red;
+    padding: 5px 10px;
+    text-shadow: 2px 5px 8px white;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.home{
+    height: 400px;
+    padding: 70px;
+    z-index: -1;
+}
+.title-1{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 100;
+    text-align: right;
+}
+.home p{
+    color: lemonchiffon;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: black;
+    flex-wrap: wrap;
+}
+.about .row .content h4{
+    font-size: 1.8rem;
+    color: brown;
+    margin: 40px;
+    text-align: center;
+}
+.about .row .content p{
+    font-size: 1rem;
+    color: white;
+    margin: 40px;
+    padding: 80px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    border-style: ridge;
+    list-style-type: disc;
+    justify-content: center;
+
+}
+.about .row .content p:hover{
+    text-shadow: 2px 5px 8px white;
+}
+.types p{
+    margin: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.types ul li{
+    margin-left: 40px;
+    margin-top: 10px;
+    color:white;
+    list-style-type: disc;
+    justify-content: center;
+    
+}
+#sticky{
+    position: fixed;
+    bottom:3%;
+    margin-left: 90%;
+}
+.mvv-container{
+    max-width: 90%;
+    margin: 50px auto 0;
+}
+.mvv-container .mvv-block{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mvv-container .mvv-block .image{
+    flex: 0 0 auto;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.3);
+}
+.mvv-container .mvv-block .image img{
+    width: 100%;
+    transition: .3s;
+    transform: scale(1);
+}
+.mvv-container .mvv-block .image:hover img{
+    transform: scale(1.05);
+}
+.mvv-container .mvv-block .content1{
+    float: 0 0 auto;
+    width: calc(100% - 400px);
+    box-sizing: border-box;
+    align-self: center;
+    text-align: justify;
+}
+.mvv-container .mvv-block .content1 h5{
+    font-weight: 700;
+    font-size: 22px;
+    color:white;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+@media screen and (min-width: 1024px){
+    .mvv-container .mvv-block:nth-child(odd) .image{
+        order: 1;
+    }
+    .mvv-container .mvv-block:nth-child(even) .image{
+        order: 2;
+    }
+    .mvv-container .mvv-block:nth-child(odd) .content1{
+        order: 2;
+    }
+    .mvv-container .mvv-block:nth-child(even) .content1{
+        order: 1;
+    }
+}
+
+#gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery img{
+    width: 300px;
+    height: 320px;
+    margin: 10px;
+    border: 3px ridge whitesmoke;
+    transform: scale(0.5s);
+}
+.gallery img:hover{
+    width: 350px;
+    height: 360px;
+    transition: .6s;
+    border-radius: 50px;
+    margin: 10px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    padding: 10px;
+    margin: 20px;
+}
+.send{
+    padding: 15px 20px;
+}
+.send:hover{
+    color:white;
+    background-color: brown;
+}
